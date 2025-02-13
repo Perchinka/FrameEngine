@@ -7,7 +7,8 @@
 #define ENGINE_HPP
 
 #include "Registry.hpp"
-#include "rendering/RenderSystem.hpp"
+#include "Window.hpp"
+#include "rendering/Renderer.hpp"
 
 /**
  * @class Engine
@@ -24,22 +25,19 @@ class Engine {
 private:
   // TODO Make it variable
   const float fixedTimeStep = 1.0f / 60.0f;
-
   /// To handle time difference between frames
   float accumulator = 0.0f;
-
   bool isRunning = true;
 
 protected:
   /// ECS registry that stores and manages all entities and components
   Registry registry;
-
-  /// Rendering system that handles drawing
-  RenderSystem renderSystem;
+  Window window;
+  Renderer renderer;
 
 public:
   Engine();
-  ~Engine();
+  virtual ~Engine();
 
   /**
    * @brief Bootstrap
@@ -50,11 +48,6 @@ public:
 
   /**
    * @brief Starts the main game loop.
-   *
-   * - Calls on_start()
-   * The loop:
-   * - Calls 'fixed_update(float dt)'
-   * - Calls 'RenderSystem::render()'
    */
   void run();
 
@@ -62,6 +55,8 @@ public:
    * @brief Stops the engine gracefully.
    */
   void stop();
+
+  // ===== User Defined Funcitons =====
 
   /**
    * @brief User-defined logic that updates every fixed timestep.

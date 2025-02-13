@@ -1,9 +1,9 @@
 #define CATCH_CONFIG_MAIN
 
+#include "Registry.hpp"
 #include "catch2/catch_all.hpp"
 #include "components/PhysicsComponent.hpp"
 #include "components/TransformComponent.hpp"
-#include "core/Registry.hpp"
 #include "physics/PhysicsSystem.hpp"
 
 TEST_CASE("EntityID creation and deletion", "[ECS]") {

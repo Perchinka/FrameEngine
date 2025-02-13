@@ -1,52 +1,73 @@
 /**
  * @file Renderer.hpp
- * @brief Provides a global interface for rendering operations.
- *
- * The Renderer class is a static wrapper that delegates rendering tasks
- * to a dynamically assigned backend (IRenderer). This allows flexibility in
- * choosing the rendering implementation without modifying domain logic
- *
+ * @brief Manages the rendering pipeline and object submission.
  */
 
 #ifndef RENDERER_HPP
 #define RENDERER_HPP
 
-#include "IRenderer.hpp"
+#include "objects/Object.hpp"
+#include "objects/PointLight.hpp"
+#include "rendering/Camera.hpp"
+#include "rendering/Mesh.hpp"
+#include "rendering/Shader.hpp"
+#include <memory>
+#include <vector>
 
-/**
- * @class Renderer
- * @brief A static interface for rendering operations.
- *
- * The Renderer class provides a global API for rendering without exposing
- * details of the rendering backend.
- */
 class Renderer {
 private:
-  static IRenderer *renderer;
+  static Shader *shader;
+  static std::vector<Object *> renderQueue;
+  static std::vector<PointLight *> lights;
+  Camera camera;
 
 public:
-  /**
-   * @brief Sets the active rendering backend.
-   * @param newRenderer Pointer to an IRenderer implementation.
-   *
-   * This function **dynamically assigns a renderer** at runtime, allowing
-   * easy switching between different rendering backends.
-   *
-   * Example:
-   *
-   * ```
-   * X11RendererAdapter x11Renderer;
-   * Renderer::set_renderer(&x11Renderer);
-   * ```
-   *
-   */
-  static void set_renderer(IRenderer *newRenderer);
+  Renderer();
 
-  static void init();
+  /**
+   * @brief Initializes the rendering system.
+   *
+   * This method must be called before any other rendering function.
+   */
+  static void initialize();
+
+  /**
+   * @brief Clears the screen before rendering a new frame.
+   *
+   * This should be called at the beginning of each frame to clear
+   * the previous frame's contents.
+   */
   static void clear();
-  static void draw_mesh(Mesh &mesh, const Matrix4 &transformMatrix);
-  static void present();
+
+  /**
+   * @brief Submits an object to the rendering queue.
+   * @param mesh The mesh to render.
+   * @param shader The shader to use.
+   */
+  static void submit(Object *obj);
+  void clearObjects();
+
+  static void submitLight(PointLight *light);
+
+  /**
+   * @brief Swaps the front and back buffers.
+   *
+   * This function should be called at the end of the frame to present
+   * the rendered image on the screen.
+   */
+  void render();
+
+  /**
+   * @brief Shuts down the rendering system and releases resources.
+   *
+   * This method should be called when the application is closing
+   * to properly clean up the rendering context.
+   */
   static void shutdown();
+
+  void setShader(Shader *shader);
+  static Shader *getShader() { return shader; }
+  Camera &getCamera();
 };
 
 #endif // RENDERER_HPP

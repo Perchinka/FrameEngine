@@ -10,7 +10,8 @@
 #ifndef ENTITY_HPP
 #define ENTITY_HPP
 
-#include "core/Registry.hpp"
+#include "Logger.hpp"
+#include "Registry.hpp"
 #include <iostream>
 
 /**
@@ -53,8 +54,7 @@ public:
    */
   template <typename T, typename... Args> void add_component(Args &&...args) {
     if (registry_.has_component<T>(id_)) {
-      std::cerr << "Warning: Entity " << id_ << " already has component "
-                << typeid(T).name() << std::endl;
+      LOG(WARNING, "Entity %d already has component %s", id_, typeid(T).name());
       return;
     }
     registry_.add_component<T>(id_, T(std::forward<Args>(args)...));
@@ -68,8 +68,8 @@ public:
    */
   template <typename T> void remove_component() {
     if (!registry_.has_component<T>(id_)) {
-      std::cerr << "Warning: Entity " << id_ << " does not have component "
-                << typeid(T).name() << std::endl;
+      LOG(WARNING, "Entity %d does not have component %s", id_,
+          typeid(T).name());
       return;
     }
     registry_.remove_component<T>(id_);

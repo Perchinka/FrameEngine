@@ -1,89 +1,68 @@
-#include "components/PhysicsComponent.hpp"
-#include "core/Engine.hpp"
-#include "core/Object.hpp"
-#include "physics/PhysicsSystem.hpp"
+#include "Engine.hpp"
+#include "Logger.hpp"
+#include "objects/Object.hpp"
+#include "rendering/Camera.hpp"
 #include "rendering/Mesh.hpp"
-#include "rendering/adapters/X11RendererAdapter.hpp"
+
+Logger &logger = Logger::getInstance();
 
 class Simulation : public Engine {
 private:
-  Object *cube;
-  Object *spheres[3];
+  Mesh *cubeMesh;
+  Object *cube1;
+  Object *cube2;
 
-  float orbitRadius = 3.0f;
-  float cubeMass = 5.0f;
-  float gravityConstant = 5.0f;
+  PointLight *pointLight;
+
+  float timeElapsed = 0.0f;
+  Camera &camera = renderer.getCamera();
 
 public:
   void on_start() override {
-    // Create cube
-    cube = new Object(registry, Mesh::createCube());
-    cube->transform->position = Vector3(1.0f, -2.0f, -7.0f);
-    cube->add_component<PhysicsComponent>(Vector3(), Vector3(), cubeMass);
-
-    // Create spheres
-    for (int i = 0; i < 3; i++) {
-      spheres[i] = new Object(registry, Mesh::createSphere());
-      spheres[i]->add_component<PhysicsComponent>(Vector3(), Vector3(), 1.0f);
+    cubeMesh = Mesh::loadFromOBJ("demo_assets/monkey.obj");
+    if (!cubeMesh) {
+      LOG(ERROR, "Error while loading .obj file");
     }
 
-    // Place spheres around cube with initial orbital velocity
-    spheres[0]->transform->position =
-        cube->transform->position + Vector3(orbitRadius, 0.0f, 0.0f);
-    spheres[1]->transform->position =
-        cube->transform->position + Vector3(-orbitRadius, 0.0f, 0.0f);
-    spheres[2]->transform->position =
-        cube->transform->position + Vector3(orbitRadius / 2, orbitRadius, 0.0f);
+    // And reuse it :D
+    cube1 = new Object(registry, cubeMesh);
+    cube1->transform->position = Vector3(0.0f, 0.0f, 0.0f);
+    cube1->transform->scale = cube1->transform->scale * .3;
+    cube1->rotate(Vector3(0, 1, 0), 180);
 
-    // Stable orbits velocity (GM/r)
-    float initialSpeed = sqrt(gravityConstant * cubeMass / orbitRadius);
-    spheres[0]->get_component<PhysicsComponent>()->velocity =
-        Vector3(0.0f, initialSpeed, 0.0f);
-    spheres[1]->get_component<PhysicsComponent>()->velocity =
-        Vector3(0.0f, -initialSpeed, 0.0f);
-    spheres[2]->get_component<PhysicsComponent>()->velocity =
-        Vector3(-initialSpeed, 0.0f, 0.0f);
+    cube2 = new Object(registry, cubeMesh);
+    cube2->transform->scale = cube1->transform->scale * .5;
+    cube2->transform->position = Vector3(1.5f, 2.0f, 3);
+    cube2->setColor(Vector3(1, 0, 0));
+
+    renderer.submit(cube1);
+    renderer.submit(cube2);
+
+    pointLight =
+        new PointLight(registry, Vector3(5.0f, 5.0f, 0.0f),
+                       Vector3(0xf9 / 256.f, 0xd7 / 256.f, 0x1c / 256.f), .7f);
+    renderer.submitLight(pointLight);
+
+    camera.setPosition(Vector3(0, 0, -2.0f));
+    camera.lookAt(Vector3(0.0f, 0.0f, 0.0f));
   }
 
   void fixed_update(float dt) override {
-    // Rotate cube over time
-    Quaternion rotationStep =
-        Quaternion::from_axis_angle(Vector3(.5, 1, 1), 45.0f * dt);
-    cube->transform->rotation = rotationStep * cube->transform->rotation;
+    timeElapsed += dt;
 
-    for (int i = 0; i < 3; i++) {
-      auto &spherePhysics = *spheres[i]->get_component<PhysicsComponent>();
+    // cube1->rotate(Vector3(0.5f, 1.0f, 0.0f), dt * 50.0f);
+    cube2->rotate(Vector3(1.0f, 1.0f, 2.0f), dt * 50.0f);
+    cube2->move(Vector3(sin(timeElapsed) / 20.0f, 0, 0));
 
-      // Gravitational force
-      Vector3 direction =
-          cube->transform->position - spheres[i]->transform->position;
-      float distance = direction.magnitude();
-      if (distance > 0.1f) { // Avoid extreme forces at very small distances
-        Vector3 force = direction.normalized() *
-                        (gravityConstant * cubeMass / (distance * distance));
-
-        spherePhysics.acceleration = force;
-      }
-
-      // Rotate spheres
-      Quaternion selfRotationStep =
-          Quaternion::from_axis_angle(Vector3((random() % 90 + 10) / 100.f, 1,
-                                              (random() % 90 + 10) / 100.f),
-                                      90.0f * dt);
-      spheres[i]->transform->rotation =
-          selfRotationStep * spheres[i]->transform->rotation;
-    }
-
-    // Apply physics updates
-    PhysicsSystem::update(registry, dt);
+    float radius = .5;
+    float ang_speed = 1;
+    pointLight->transform->position =
+        (Vector3(radius * cos(ang_speed * timeElapsed), 0,
+                 radius * sin(ang_speed * timeElapsed)));
   }
 };
 
 int main() {
-  X11RendererAdapter X11Renderer;
-  Renderer::set_renderer(&X11Renderer);
-  Renderer::init();
-
   Simulation sim;
   sim.init();
   sim.run();

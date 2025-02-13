@@ -1,19 +1,809 @@
 [
   {
     "arguments": [
-      "/usr/bin/g++",
-      "-Wall",
-      "-Wextra",
-      "-Wpedantic",
-      "-std=c++17",
-      "-Iinclude",
+      "/usr/bin/cc",
+      "-c",
+      "CMakeCCompilerId.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/3.31.5/CompilerIdC",
+    "file": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/3.31.5/CompilerIdC/CMakeCCompilerId.c"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-c",
+      "CMakeCXXCompilerId.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/3.31.5/CompilerIdCXX",
+    "file": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/3.31.5/CompilerIdCXX/CMakeCXXCompilerId.cpp"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-v",
       "-c",
       "-o",
-      "build/components/RendereComponent.o",
-      "src/components/RendereComponent.cpp"
+      "CMakeFiles/cmTC_f719c.dir/CMakeCCompilerABI.c.o",
+      "/usr/share/cmake/Modules/CMakeCCompilerABI.c"
     ],
-    "directory": "/home/alex/Documents/Projects/GravitySimulation",
-    "file": "/home/alex/Documents/Projects/GravitySimulation/src/components/RendereComponent.cpp",
-    "output": "/home/alex/Documents/Projects/GravitySimulation/build/components/RendereComponent.o"
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/CMakeScratch/TryCompile-16M5gR",
+    "file": "/usr/share/cmake/Modules/CMakeCCompilerABI.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/CMakeScratch/TryCompile-16M5gR/CMakeFiles/cmTC_f719c.dir/CMakeCCompilerABI.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-v",
+      "-c",
+      "-o",
+      "CMakeFiles/cmTC_34101.dir/CMakeCXXCompilerABI.cpp.o",
+      "/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/CMakeScratch/TryCompile-6O5t0z",
+    "file": "/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/CMakeScratch/TryCompile-6O5t0z/CMakeFiles/cmTC_34101.dir/CMakeCXXCompilerABI.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-c",
+      "-o",
+      "CMakeFiles/glad.dir/external/glad/src/glad.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glad/src/glad.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glad/src/glad.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/glad.dir/external/glad/src/glad.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/context.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/context.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/context.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/context.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/init.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/init.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/init.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/init.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/input.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/input.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/input.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/input.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/monitor.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/monitor.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/monitor.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/platform.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/platform.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/platform.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/platform.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/vulkan.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/vulkan.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/vulkan.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/window.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/window.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/window.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/window.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/egl_context.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/egl_context.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/egl_context.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/osmesa_context.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/osmesa_context.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/osmesa_context.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/null_init.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/null_init.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/null_init.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/null_monitor.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/null_monitor.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/null_monitor.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/null_window.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/null_window.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/null_window.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/null_joystick.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/null_joystick.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/null_joystick.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/posix_module.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/posix_module.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/posix_module.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/posix_time.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/posix_time.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/posix_time.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/posix_thread.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/posix_thread.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/posix_thread.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/x11_init.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/x11_init.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/x11_init.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/x11_monitor.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/x11_monitor.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/x11_monitor.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/x11_window.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/x11_window.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/x11_window.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/xkb_unicode.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/xkb_unicode.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/xkb_unicode.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/glx_context.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/glx_context.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/glx_context.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/wl_init.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/wl_init.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/wl_init.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/wl_init.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/wl_monitor.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/wl_monitor.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/wl_monitor.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/wl_monitor.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/wl_window.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/wl_window.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/wl_window.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/wl_window.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/linux_joystick.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/linux_joystick.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/linux_joystick.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/cc",
+      "-DHAVE_MEMFD_CREATE",
+      "-D_DEFAULT_SOURCE",
+      "-D_GLFW_WAYLAND",
+      "-D_GLFW_X11",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/src",
+      "-I/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+      "-std=c99",
+      "-fPIC",
+      "-Wall",
+      "-c",
+      "-o",
+      "CMakeFiles/glfw.dir/posix_poll.c.o",
+      "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/posix_poll.c"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src",
+    "file": "/home/alex/Documents/Projects/FrameEngine/external/glfw/src/posix_poll.c",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/frame_engine.dir/src/core/Engine.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/src/core/Engine.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/src/core/Engine.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/frame_engine.dir/src/core/Engine.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/frame_engine.dir/src/core/Object.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/src/core/Object.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/src/core/Object.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/frame_engine.dir/src/core/Object.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/frame_engine.dir/src/core/Window.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/src/core/Window.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/src/core/Window.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/frame_engine.dir/src/core/Window.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/frame_engine.dir/src/main.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/src/main.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/src/main.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/frame_engine.dir/src/main.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/frame_engine.dir/src/math/Quaternion.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/src/math/Quaternion.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/src/math/Quaternion.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/frame_engine.dir/src/math/Quaternion.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/frame_engine.dir/src/rendering/Camera.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/src/rendering/Camera.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/src/rendering/Camera.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/frame_engine.dir/src/rendering/Camera.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/frame_engine.dir/src/rendering/Mesh.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/src/rendering/Mesh.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/src/rendering/Mesh.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/frame_engine.dir/src/rendering/Mesh.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/frame_engine.dir/src/rendering/Renderer.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/src/rendering/Renderer.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/src/rendering/Renderer.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/frame_engine.dir/src/rendering/Renderer.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/frame_engine.dir/src/rendering/Shader.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/src/rendering/Shader.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/src/rendering/Shader.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/frame_engine.dir/src/rendering/Shader.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/test_vector3.dir/tests/unit/test_vector3.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/tests/unit/test_vector3.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/tests/unit/test_vector3.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/test_vector3.dir/tests/unit/test_vector3.cpp.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/c++",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glfw/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/external/glad/include",
+      "-I/home/alex/Documents/Projects/FrameEngine/include",
+      "-std=gnu++17",
+      "-c",
+      "-o",
+      "CMakeFiles/test_ecs.dir/tests/unit/test_ecs.cpp.o",
+      "/home/alex/Documents/Projects/FrameEngine/tests/unit/test_ecs.cpp"
+    ],
+    "directory": "/home/alex/Documents/Projects/FrameEngine/build",
+    "file": "/home/alex/Documents/Projects/FrameEngine/tests/unit/test_ecs.cpp",
+    "output": "/home/alex/Documents/Projects/FrameEngine/build/CMakeFiles/test_ecs.dir/tests/unit/test_ecs.cpp.o"
   }
 ]

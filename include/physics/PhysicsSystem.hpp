@@ -15,9 +15,9 @@
 #ifndef PHYSICS_SYSTEM_HPP
 #define PHYSICS_SYSTEM_HPP
 
+#include "Registry.hpp"
 #include "components/PhysicsComponent.hpp"
 #include "components/TransformComponent.hpp"
-#include "core/Registry.hpp"
 
 class PhysicsSystem {
 public:
